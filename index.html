@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="calculate.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="section intro">
+        <h1 class="heading-primary margin-bottom-md text-center">
+          Šalingrad kalkulákor
+        </h1>
+        <p class="description text-center">
+          Aplikace pro výpočet ceny jízdného. Zadejte počet minut, kolik chcete
+          cestovat.
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="heading-secondary margin-bottom-md text-center">
+          Cena jízdného
+        </h2>
+        <div class="tickets">
+          <div class="ticket">
+            <p class="duration">Max. 15 min</p>
+            <p class="price">10 Kč</p>
+          </div>
+          <div class="ticket">
+            <p class="duration">Max. 60 min</p>
+            <p class="price">25 Kč</p>
+          </div>
+          <div class="ticket">
+            <p class="duration">Max. 90 min</p>
+            <p class="price">33 Kč</p>
+          </div>
+          <div class="ticket">
+            <p class="duration">Max. 24 h</p>
+            <p class="price">90 Kč</p>
+          </div>
+        </div>
+      </section>
+      <section class="section calculator">
+        <h2 class="heading-secondary margin-bottom-md text-center">
+          Zadejte počet minut
+        </h2>
+        <input class="input--minutes" />
+        <button class="btn btn--full">Spočítat</button>
+        <span name="price" class="price-final margin-top-sm">cena</span>
+      </section>
+    </div>
+  </body>
+</html>

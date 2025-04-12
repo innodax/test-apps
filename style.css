@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  /* color: var(--text-color); */
+  background-color: white;
+  font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  margin-bottom: 5px;
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.margin-top-sm {
+  margin-top: 1.6rem;
+}
+
+.margin-bottom-md {
+  margin-bottom: 3.2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2px;
+}
+
+.section {
+  padding: 4.8rem 0;
+}
+
+.heading-primary {
+  font-size: 4.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #511688;
+}
+
+.heading-secondary {
+  font-size: 3.6rem;
+  color: #511688;
+}
+
+.description {
+}
+
+.tickets {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.ticket {
+  background-color: blueviolet;
+  padding: 1.2rem 2.4rem;
+}
+
+.duration {
+  font-size: 1.8rem;
+  color: white;
+}
+
+.price {
+  font-size: 3.6rem;
+  color: white;
+}
+
+.calculator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.input--minutes {
+  border: 1px solid #511688;
+  padding: 1.6rem;
+}
+
+.btn,
+.btn:visited {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  line-height: 1;
+  align-self: center;
+  border: none;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.4s ease-out;
+  z-index: -1;
+}
+
+.btn:hover::before,
+.btn:active::before {
+  width: 100%;
+}
+
+.btn--full,
+.btn--full:visited {
+  color: white;
+  background-color: blueviolet;
+  cursor: pointer;
+}
+
+.btn--full::before {
+  background: #511688;
+}
+
+.price-final {
+  font-size: 4.8rem;
+  /* font-size: 3.6rem; */
+  color: #511688;
+}
