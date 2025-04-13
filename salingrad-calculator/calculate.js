@@ -24,7 +24,6 @@ document.querySelector(".btn--full").addEventListener("click", function () {
     if (minutes <= 15) {
       price = 10;
     } else if (minutes < 60) {
-      // bug boundary
       price = 25;
     } else if (minutes <= 90) {
       price = 33;

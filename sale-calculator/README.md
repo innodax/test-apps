@@ -4,6 +4,7 @@
 
 <p>Typo in "měsící"</p>
 <p>Cannot be submitted by enter (minor)</p>
+<p>Favicon missing (minor)</p>
 
 ## Inputs
 
