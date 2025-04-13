@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="calculate.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <img class="img-cover" src="cover.avif" />
+      <div class="content">
+        <h1 class="heading-primary margin-bottom-md">
+          Věrnostní sleva pro registrované zákazníky
+        </h1>
+        <p class="description-text">
+          Jako registrovaný zákazník u nás automaticky získáváte slevu z každého
+          nákupu nad 2 000 Kč. Výše této slevy se odvíjí od vaší celkové útraty
+          <strong>v předchozím kalendářním měsíci</strong>.
+        </p>
+
+        <p>Čím víc u nás nakupujete, tím vyšší slevu získáváte:</p>
+        <ul class="sale-options margin-bottom-md">
+          <li class="sale-option">
+            <strong>0 %</strong> – pokud jste utratili méně než 5 000 Kč
+          </li>
+          <li class="sale-option">
+            <strong>2 %</strong> – pokud jste utratili alespoň 5 000 Kč, ale
+            méně než 10 000 Kč
+          </li>
+          <li class="sale-option">
+            <strong>5 %</strong> – pokud vaše útrata byla mezi 10 000 a
+            14 999 Kč
+          </li>
+          <li class="sale-option">
+            <strong>7 %</strong> – pokud jste utratili 15 000 Kč nebo více
+          </li>
+        </ul>
+
+        <p class="margin-bottom-lg">
+          <em
+            >Sleva se uplatní automaticky při nákupu – žádné kódy, žádné
+            starosti.</em
+          >
+        </p>
+
+        <h2 class="heading-secondary margin-bottom-md">Vypočtěte si slevu</h2>
+        <p>Zadejte útratu v minulém měsící:</p>
+        <div class="calculate-box margin-bottom-sm">
+          <input type="number" class="input--spent" />
+          <button class="btn--calculate">
+            <ion-icon name="bulb-outline" class="icon--calculate"></ion-icon>
+          </button>
+        </div>
+
+        <p class="discount-paragraph">
+          Sleva: <strong class="discount-value">0</strong> Kč
+        </p>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
