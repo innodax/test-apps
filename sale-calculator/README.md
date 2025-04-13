@@ -8,6 +8,7 @@
 
 ## Inputs
 
+<p>Calculates final price with discount, not discount</p>
 <p>All boundaries are > instead of >=</p>
-<p>The last boundary calculates uses 8%, not 7% </p>
+<p>The last boundary uses 8%, not 7% </p>
 <p>Negative values - discount is equal to value spent</p>
