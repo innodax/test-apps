@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=family=Nunito:wght@400;500;700&family=Tinos:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script defer src="calculate.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <section class="section intro">
+        <h1 class="heading-primary margin-bottom-md text-center">
+          Šalingrad kalkulákor
+        </h1>
+        <p class="description text-center">
+          Aplikace pro výpočet ceny jízdného veřejné dopravy města Šalingrad.
+        </p>
+      </section>
+      <section class="section">
+        <h2 class="heading-secondary margin-bottom-md text-center">
+          Cena jízdného
+        </h2>
+        <div class="tickets">
+          <div class="ticket">
+            <div class="duration-box">
+              <ion-icon class="icon" name="time-outline"></ion-icon>
+              <span class="duration">15 min</span>
+            </div>
+            <p class="price">10 Kč</p>
+          </div>
+          <div class="ticket">
+            <div class="duration-box">
+              <ion-icon class="icon" name="time-outline"></ion-icon>
+              <span class="duration">60 min</span>
+            </div>
+            <p class="price">25 Kč</p>
+          </div>
+          <div class="ticket">
+            <div class="duration-box">
+              <ion-icon class="icon" name="time-outline"></ion-icon>
+              <span class="duration">90 min</span>
+            </div>
+            <p class="price">33 Kč</p>
+          </div>
+          <div class="ticket">
+            <div class="duration-box">
+              <ion-icon class="icon" name="time-outline"></ion-icon>
+              <span class="duration">24 h</span>
+            </div>
+            <p class="price">90 Kč</p>
+          </div>
+        </div>
+      </section>
+      <section class="section calculator">
+        <h2 class="heading-secondary margin-bottom-sm text-center">
+          Zadejte počet minut
+        </h2>
+        <div class="calculate-combo">
+          <input class="input--minutes" />
+          <button class="btn btn--full">Spočítat</button>
+        </div>
+        <div class="child-ticket">
+          <input
+            type="checkbox"
+            name="checkbox--child"
+            class="checkbox--child"
+          />
+          <span>Dětské jízdné</span>
+        </div>
+        <span name="price" class="price-final margin-top-sm">cena</span>
+      </section>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

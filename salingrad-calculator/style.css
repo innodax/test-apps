@@ -13,7 +13,7 @@ html {
 
 body {
   position: relative;
-  /* color: var(--text-color); */
+  color: black;
   background-color: white;
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
@@ -31,6 +31,10 @@ p {
 
 .margin-bottom-md {
   margin-bottom: 3.2rem;
+}
+
+.margin-bottom-sm {
+  margin-bottom: 1.6rem;
 }
 
 .text-center {
@@ -59,22 +63,37 @@ p {
   color: #511688;
 }
 
-.description {
-}
-
 .tickets {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 1.6rem;
 }
 
 .ticket {
   background-color: blueviolet;
-  padding: 1.2rem 2.4rem;
+  padding: 2.4rem 2.4rem 1.2rem 2.4rem;
+  transition: all 0.4s;
+}
+
+.ticket:hover {
+  background-color: #511688;
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+.duration-box {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.duration-box .icon {
+  font-size: 1.8rem;
+  color: white;
 }
 
 .duration {
   font-size: 1.8rem;
+  display: block;
   color: white;
 }
 
@@ -91,9 +110,22 @@ p {
   gap: 1.6rem;
 }
 
+.calculate-combo {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
 .input--minutes {
   border: 1px solid #511688;
   padding: 1.6rem;
+  font-size: 2rem;
+}
+
+.child-ticket {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
 }
 
 .btn,
@@ -140,6 +172,5 @@ p {
 
 .price-final {
   font-size: 4.8rem;
-  /* font-size: 3.6rem; */
   color: #511688;
 }
